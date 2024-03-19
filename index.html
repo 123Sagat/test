@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/sagat.png" class="logo"/>
+            <ul id="slidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>FRONTEND DEVELOPER</p>
+            <h1>I am <span>Sagat </span><br> pokhrel from Nepal</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+  <div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="image/profile.jpg"/>
+            
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+           <p>HTML, CSS, and JavaScript are the trifecta of modern web development. HTML forms the skeleton, providing the structure and content of a webpage. CSS adds style, enhancing the visual appeal and layout. JavaScript injects interactivity, breathing life into static pages, enabling dynamic behavior and user engagement. Together, they synergize to create immersive web experiences, minimizing redundancy while maximizing impact.</p>
+           <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+            <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+            <p class="tab-links" onclick="opentab(event, 'experience')">Experiences</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li ><span>HTML</span><br>HTML directs structure, laying the groundwork for web content.</li>
+                <li ><span>CSS</span><br>CSS governs style, sculpting the visual presentation of web elements.</li>
+                <li ><span>JAVASCRIPT</span><br>JS controls interactivity, enabling dynamic behavior and user engagement on web pages</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li ><span>SCHOOL LEVEL</span><br>Pioneer International Public School</li>
+                <li ><span>HIGHER LEVEL</span><br>Science From Xavier International College</li>
+                <li ><span>BACHELOR LEVEL</span><br>Computer Engineering From NCIT</li>
+            </ul>
+        </div>
+        <div class="tab-contents"  id="experience">
+            <ul>
+                <li ><span>Present</span><br> No Experience</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-list">
+          <div class="service-card">
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Web design combines graphic design, UI, and UX to create visually appealing and user-friendly websites, <br>including layout, color, typography, imagery, and interactivity. It emphasizes responsiveness for optimal <br>display across devices</p>    
+            <a href="#">Learn More</a>        
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>UI/UX refers to the combined disciplines of User Interface (UI) and User Experience (UX) design, <br>focusing on creating intuitive, visually appealing digital products with seamless interactions.</p>    
+            <a href="#">Learn More</a>         
+        </div>
+        </div>
+    </div>
+</div>
+ <!-- 
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">MY PORTFOLIO</h1>
+    </div>
+</div>
+-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>tagas6808@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9861016874</p>
+                <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="MMessage" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="index.js"/>
+</body>
+</html>
